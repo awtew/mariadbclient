@@ -1,6 +1,4 @@
 FROM centos:centos7
-
-RUN yum update -y ; yum install -y mariadb
-
-
+MAINTAINER Arthur Tew
+RUN yum update -y ; yum install -y mariadb net-tools 
 CMD sleep 3600
